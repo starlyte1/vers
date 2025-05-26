@@ -1,24 +1,4 @@
-/*-----------------------------------*\
-  #main.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
 
   --violet-blue-crayola: hsla(234, 50%, 64%, 1);
   --dark-cornflower-blue_a7: hsla(214, 88%, 27%, 0.07);
@@ -491,7 +471,11 @@ body.nav-active { overflow: hidden; }
   box-shadow: var(--shadow-2);
   border-radius: var(--radius-6);
   margin: 0 1rem;
-  border: 1px solid #000;
+  border: 1px solid #878889;
+}
+
+.tbold{
+  font-weight: bold;
 }
 
 .service-card .card-icon {
