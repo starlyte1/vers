@@ -892,29 +892,6 @@
   });
 </script>
 
-<!--   Paypal -->
-<div id="paypal-button-container-P-7VD12064SF8575159NBCU7LY"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=Aa3wi-yper97SPCQ01URk2hbF2OY4krcBi3kcczXvIbwkbeTLiS2X3fhrq2VnotgCaFmFa1TtzJZLD9r&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-      style: {
-          shape: 'pill',
-          color: 'gold',
-          layout: 'vertical',
-          label: 'paypal'
-      },
-      createSubscription: function(data, actions) {
-        return actions.subscription.create({
-          /* Creates the subscription */
-          plan_id: 'P-7VD12064SF8575159NBCU7LY'
-        });
-      },
-      onApprove: function(data, actions) {
-        alert(data.subscriptionID); // You can add optional success message for the subscriber here
-      }
-  }).render('#paypal-button-container-P-7VD12064SF8575159NBCU7LY'); // Renders the PayPal button
-</script>  
-
 </body>
 
 </html>
